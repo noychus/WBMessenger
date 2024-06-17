@@ -14,46 +14,54 @@ struct SocialButtonsView: View {
                 Spacer()
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image("twitter")
+                    HStack {
+                        Image("twitter")
+                    }
+                    .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color("brandColor"), lineWidth: 1.5)
+                    )
                 })
-                .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 30)
-                        .stroke(Color("brandColor"), lineWidth: 1.5)
-                )
                 
                 Spacer()
                 
                 Button(action: {}, label: {
-                    Image("instagram")
+                    HStack {
+                        Image("instagram")
+                    }
+                    .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color("brandColor"), lineWidth: 1.5)
+                    )
                 })
-                .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 30)
-                        .stroke(Color("brandColor"), lineWidth: 1.5)
-                )
                 
                 Spacer()
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image("linkedIn")
+                    HStack {
+                        Image("linkedIn")
+                    }
+                    .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color("brandColor"), lineWidth: 1.5)
+                    )
                 })
-                .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 30)
-                        .stroke(Color("brandColor"), lineWidth: 1.5)
-                )
                 
                 Spacer()
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Image("facebook")
+                    HStack {
+                        Image("facebook")
+                    }
+                    .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 30)
+                            .stroke(Color("brandColor"), lineWidth: 1.5)
+                    )
                 })
-                .frame(width: geometry.size.width / 5, height: geometry.size.width / 10, alignment: .center)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 30)
-                        .stroke(Color("brandColor"), lineWidth: 1.5)
-                )
                 
                 Spacer()
             }
