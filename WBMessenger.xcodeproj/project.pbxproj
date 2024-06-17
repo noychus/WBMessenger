@@ -12,6 +12,11 @@
 		AC6769C52C1AB18B0009D356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6769C42C1AB18B0009D356 /* Assets.xcassets */; };
 		AC6769C82C1AB18B0009D356 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6769C72C1AB18B0009D356 /* Preview Assets.xcassets */; };
 		AC793C202C1AC16900BFDA4D /* TermsOfUseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C1F2C1AC16900BFDA4D /* TermsOfUseView.swift */; };
+		AC793C222C1AC96B00BFDA4D /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C212C1AC96B00BFDA4D /* ContactsView.swift */; };
+		AC793C262C1AC9F000BFDA4D /* ProfileAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C252C1AC9F000BFDA4D /* ProfileAccountView.swift */; };
+		AC793C282C1ACA6700BFDA4D /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C272C1ACA6700BFDA4D /* ContactModel.swift */; };
+		AC793C2A2C1AD70100BFDA4D /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C292C1AD70100BFDA4D /* AvatarView.swift */; };
+		AC793C2C2C1AE0E400BFDA4D /* SocialButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C2B2C1AE0E400BFDA4D /* SocialButtonsView.swift */; };
 		ACF0E6E02C1AB338008787E6 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0E6DF2C1AB338008787E6 /* WalkthroughView.swift */; };
 		ACF0E6E22C1AB364008787E6 /* UserAgreementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0E6E12C1AB364008787E6 /* UserAgreementButton.swift */; };
 		ACF0E6E42C1AB36F008787E6 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0E6E32C1AB36F008787E6 /* LoginButtonView.swift */; };
@@ -26,6 +31,11 @@
 		AC6769C42C1AB18B0009D356 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC6769C72C1AB18B0009D356 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC793C1F2C1AC16900BFDA4D /* TermsOfUseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseView.swift; sourceTree = "<group>"; };
+		AC793C212C1AC96B00BFDA4D /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		AC793C252C1AC9F000BFDA4D /* ProfileAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAccountView.swift; sourceTree = "<group>"; };
+		AC793C272C1ACA6700BFDA4D /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		AC793C292C1AD70100BFDA4D /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		AC793C2B2C1AE0E400BFDA4D /* SocialButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButtonsView.swift; sourceTree = "<group>"; };
 		ACF0E6DF2C1AB338008787E6 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
 		ACF0E6E12C1AB364008787E6 /* UserAgreementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementButton.swift; sourceTree = "<group>"; };
 		ACF0E6E32C1AB36F008787E6 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
@@ -66,6 +76,7 @@
 				AC6769C02C1AB1890009D356 /* WBMessengerApp.swift */,
 				AC6769C22C1AB1890009D356 /* ContentView.swift */,
 				ACF0E6EB2C1AB6FF008787E6 /* Views */,
+				AC793C232C1AC97500BFDA4D /* Models */,
 				AC6769C42C1AB18B0009D356 /* Assets.xcassets */,
 				AC6769C62C1AB18B0009D356 /* Preview Content */,
 			);
@@ -78,6 +89,24 @@
 				AC6769C72C1AB18B0009D356 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC793C232C1AC97500BFDA4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC793C272C1ACA6700BFDA4D /* ContactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC793C242C1AC9D400BFDA4D /* ProfileAccountView */ = {
+			isa = PBXGroup;
+			children = (
+				AC793C252C1AC9F000BFDA4D /* ProfileAccountView.swift */,
+				AC793C292C1AD70100BFDA4D /* AvatarView.swift */,
+				AC793C2B2C1AE0E400BFDA4D /* SocialButtonsView.swift */,
+			);
+			path = ProfileAccountView;
 			sourceTree = "<group>";
 		};
 		ACF0E6DE2C1AB2F1008787E6 /* WalkthroughView */ = {
@@ -103,6 +132,7 @@
 		ACF0E6EA2C1AB6ED008787E6 /* ContactView */ = {
 			isa = PBXGroup;
 			children = (
+				AC793C212C1AC96B00BFDA4D /* ContactsView.swift */,
 			);
 			path = ContactView;
 			sourceTree = "<group>";
@@ -113,6 +143,7 @@
 				ACF0E6DE2C1AB2F1008787E6 /* WalkthroughView */,
 				ACF0E6E72C1AB52B008787E6 /* AuthorizationView */,
 				ACF0E6EA2C1AB6ED008787E6 /* ContactView */,
+				AC793C242C1AC9D400BFDA4D /* ProfileAccountView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,13 +219,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6769C32C1AB1890009D356 /* ContentView.swift in Sources */,
+				AC793C2A2C1AD70100BFDA4D /* AvatarView.swift in Sources */,
 				AC6769C12C1AB1890009D356 /* WBMessengerApp.swift in Sources */,
 				ACF0E6E02C1AB338008787E6 /* WalkthroughView.swift in Sources */,
 				ACF0E6E22C1AB364008787E6 /* UserAgreementButton.swift in Sources */,
+				AC793C2C2C1AE0E400BFDA4D /* SocialButtonsView.swift in Sources */,
+				AC793C262C1AC9F000BFDA4D /* ProfileAccountView.swift in Sources */,
 				ACF0E6E62C1AB3B4008787E6 /* UserAgreementView.swift in Sources */,
 				ACF0E6E92C1AB539008787E6 /* AuthorizationView.swift in Sources */,
+				AC793C222C1AC96B00BFDA4D /* ContactsView.swift in Sources */,
 				ACF0E6E42C1AB36F008787E6 /* LoginButtonView.swift in Sources */,
 				AC793C202C1AC16900BFDA4D /* TermsOfUseView.swift in Sources */,
+				AC793C282C1ACA6700BFDA4D /* ContactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
