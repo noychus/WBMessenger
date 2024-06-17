@@ -15,7 +15,7 @@ struct WalkthroughView: View {
         ZStack {
             VStack {
                 
-                Image(colorScheme == .light ? "IllustrationLight" : "IllustrationDark")
+                Image("Illustration")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .padding(.horizontal, 62)

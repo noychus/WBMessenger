@@ -16,7 +16,7 @@ struct UserAgreementButton: View {
     var body: some View {
         VStack {
             Text("Нажимая кнопку продолжить я соглашаюсь c")
-                .foregroundStyle(Color.gray)
+                .foregroundStyle(Color("brandGrayColor"))
             
             HStack(spacing: 2) {
                 Button(action: { isPressedUserAgreement.toggle() }, label: {
@@ -43,8 +43,6 @@ struct UserAgreementButton: View {
         })
     }
 }
-
-//Нажимая кнопку продолжить я соглашаюсь с  Политикой Конфиденциальности и Условиями Использования
 
 #Preview {
     UserAgreementButton()

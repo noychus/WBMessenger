@@ -21,7 +21,7 @@ struct AvatarView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
-                        .frame(width: geometry.size.width,height: geometry.size.height / 1.7)
+                        .frame(width: geometry.size.width,height: geometry.size.height / 3)
                         .position(x: geometry.size.width / 2, y: geometry.size.width / 2)
                         .shadow(radius: 5)
                 default:
@@ -43,9 +43,9 @@ struct AvatarView: View {
 }
 
 #Preview {
-    ProfileAccountView(contact: Contact(name: "Анастасия Петрова", isOnline: true, haveStories: true, phoneNumber: "9857778888"))
+    ProfileAccountView(contact: Contact(name: "Анастасия Иванова", lastVisitDate: Date().addingTimeInterval(-60), imageProfile: "anastasia", haveStories: false, phoneNumber: "9999999999"))
 }
 
 #Preview {
-    ProfileAccountView(contact: Contact(name: "Анастасия Петрова", isOnline: true, imageProfile: "ImageProfileTest", haveStories: true, phoneNumber: "985 777-88-88"))
+    ProfileAccountView(contact: Contact(name: "Анастасия Иванова", lastVisitDate: Date().addingTimeInterval(-60), imageProfile: nil, haveStories: false, phoneNumber: "9999999999"))
 }

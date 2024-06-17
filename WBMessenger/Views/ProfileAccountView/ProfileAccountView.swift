@@ -22,9 +22,9 @@ struct ProfileAccountView: View {
                     .font(.system(size: 24, weight: .medium, design: .default))
                     .foregroundStyle(Color("brandTextColor"))
                 
-                Text("+7 \(contact.phoneNumber)")
+                Text("+7\(contact.phoneNumber)")
                     .font(.system(size: 16, weight: .regular, design: .default))
-                    .foregroundStyle(Color.gray)
+                    .foregroundStyle(Color("brandGrayColor"))
             }
             
             SocialButtonsView()
@@ -34,9 +34,5 @@ struct ProfileAccountView: View {
 }
 
 #Preview {
-    ProfileAccountView(contact: Contact(name: "Анастасия Иванова", isOnline: true, haveStories: true, phoneNumber: "985 777-88-88"))
-}
-
-#Preview {
-    ProfileAccountView(contact: Contact(name: "Анастасия Петрова", isOnline: true, imageProfile: "ImageProfileTest", haveStories: true, phoneNumber: "985 777-88-88"))
+    ProfileAccountView(contact: Contact(name: "Анастасия Иванова", lastVisitDate: Date().addingTimeInterval(-60), imageProfile: "anastasia", haveStories: false, phoneNumber: "9999999999"))
 }

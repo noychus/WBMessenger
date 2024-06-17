@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC2FAD872C209F3D003F46C8 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FAD862C209F3D003F46C8 /* ContactRowView.swift */; };
+		AC2FAD892C20AB7C003F46C8 /* ContactAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FAD882C20AB7C003F46C8 /* ContactAvatarView.swift */; };
+		AC2FAD8B2C20B64C003F46C8 /* SearchLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2FAD8A2C20B64C003F46C8 /* SearchLineView.swift */; };
 		AC6769C12C1AB1890009D356 /* WBMessengerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6769C02C1AB1890009D356 /* WBMessengerApp.swift */; };
 		AC6769C32C1AB1890009D356 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6769C22C1AB1890009D356 /* ContentView.swift */; };
 		AC6769C52C1AB18B0009D356 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6769C42C1AB18B0009D356 /* Assets.xcassets */; };
@@ -25,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC2FAD862C209F3D003F46C8 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
+		AC2FAD882C20AB7C003F46C8 /* ContactAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactAvatarView.swift; sourceTree = "<group>"; };
+		AC2FAD8A2C20B64C003F46C8 /* SearchLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchLineView.swift; sourceTree = "<group>"; };
 		AC6769BD2C1AB1890009D356 /* WBMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6769C02C1AB1890009D356 /* WBMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBMessengerApp.swift; sourceTree = "<group>"; };
 		AC6769C22C1AB1890009D356 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				AC793C212C1AC96B00BFDA4D /* ContactsView.swift */,
+				AC2FAD8A2C20B64C003F46C8 /* SearchLineView.swift */,
+				AC2FAD862C209F3D003F46C8 /* ContactRowView.swift */,
+				AC2FAD882C20AB7C003F46C8 /* ContactAvatarView.swift */,
 			);
 			path = ContactView;
 			sourceTree = "<group>";
@@ -220,10 +229,13 @@
 			files = (
 				AC6769C32C1AB1890009D356 /* ContentView.swift in Sources */,
 				AC793C2A2C1AD70100BFDA4D /* AvatarView.swift in Sources */,
+				AC2FAD892C20AB7C003F46C8 /* ContactAvatarView.swift in Sources */,
 				AC6769C12C1AB1890009D356 /* WBMessengerApp.swift in Sources */,
 				ACF0E6E02C1AB338008787E6 /* WalkthroughView.swift in Sources */,
 				ACF0E6E22C1AB364008787E6 /* UserAgreementButton.swift in Sources */,
+				AC2FAD872C209F3D003F46C8 /* ContactRowView.swift in Sources */,
 				AC793C2C2C1AE0E400BFDA4D /* SocialButtonsView.swift in Sources */,
+				AC2FAD8B2C20B64C003F46C8 /* SearchLineView.swift in Sources */,
 				AC793C262C1AC9F000BFDA4D /* ProfileAccountView.swift in Sources */,
 				ACF0E6E62C1AB3B4008787E6 /* UserAgreementView.swift in Sources */,
 				ACF0E6E92C1AB539008787E6 /* AuthorizationView.swift in Sources */,
