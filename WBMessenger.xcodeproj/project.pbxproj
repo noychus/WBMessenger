@@ -20,6 +20,12 @@
 		AC793C282C1ACA6700BFDA4D /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C272C1ACA6700BFDA4D /* ContactModel.swift */; };
 		AC793C2A2C1AD70100BFDA4D /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C292C1AD70100BFDA4D /* AvatarView.swift */; };
 		AC793C2C2C1AE0E400BFDA4D /* SocialButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC793C2B2C1AE0E400BFDA4D /* SocialButtonsView.swift */; };
+		ACACAF252C21F83E00E133A7 /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACAF242C21F83E00E133A7 /* ContactDetailView.swift */; };
+		ACACAF282C21FA3A00E133A7 /* ChatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACAF272C21FA3A00E133A7 /* ChatsView.swift */; };
+		ACACAF2B2C21FD2100E133A7 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACAF2A2C21FD2100E133A7 /* MenuView.swift */; };
+		ACACAF2E2C22059E00E133A7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACAF2D2C22059E00E133A7 /* Router.swift */; };
+		ACACAF312C220D2200E133A7 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACAF302C220D2200E133A7 /* NavigationBar.swift */; };
+		ACACAF342C221F3100E133A7 /* ColorExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACACAF332C221F3100E133A7 /* ColorExtentions.swift */; };
 		ACF0E6E02C1AB338008787E6 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0E6DF2C1AB338008787E6 /* WalkthroughView.swift */; };
 		ACF0E6E22C1AB364008787E6 /* UserAgreementButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0E6E12C1AB364008787E6 /* UserAgreementButton.swift */; };
 		ACF0E6E42C1AB36F008787E6 /* LoginButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF0E6E32C1AB36F008787E6 /* LoginButtonView.swift */; };
@@ -42,6 +48,12 @@
 		AC793C272C1ACA6700BFDA4D /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		AC793C292C1AD70100BFDA4D /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		AC793C2B2C1AE0E400BFDA4D /* SocialButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialButtonsView.swift; sourceTree = "<group>"; };
+		ACACAF242C21F83E00E133A7 /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
+		ACACAF272C21FA3A00E133A7 /* ChatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsView.swift; sourceTree = "<group>"; };
+		ACACAF2A2C21FD2100E133A7 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		ACACAF2D2C22059E00E133A7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		ACACAF302C220D2200E133A7 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		ACACAF332C221F3100E133A7 /* ColorExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtentions.swift; sourceTree = "<group>"; };
 		ACF0E6DF2C1AB338008787E6 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
 		ACF0E6E12C1AB364008787E6 /* UserAgreementButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgreementButton.swift; sourceTree = "<group>"; };
 		ACF0E6E32C1AB36F008787E6 /* LoginButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButtonView.swift; sourceTree = "<group>"; };
@@ -83,6 +95,8 @@
 				AC6769C22C1AB1890009D356 /* ContentView.swift */,
 				ACF0E6EB2C1AB6FF008787E6 /* Views */,
 				AC793C232C1AC97500BFDA4D /* Models */,
+				ACACAF322C221F1700E133A7 /* Extentions */,
+				ACACAF2C2C22057200E133A7 /* Services */,
 				AC6769C42C1AB18B0009D356 /* Assets.xcassets */,
 				AC6769C62C1AB18B0009D356 /* Preview Content */,
 			);
@@ -115,6 +129,46 @@
 			path = ProfileAccountView;
 			sourceTree = "<group>";
 		};
+		ACACAF262C21FA1700E133A7 /* ChatsView */ = {
+			isa = PBXGroup;
+			children = (
+				ACACAF272C21FA3A00E133A7 /* ChatsView.swift */,
+			);
+			path = ChatsView;
+			sourceTree = "<group>";
+		};
+		ACACAF292C21FD1300E133A7 /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				ACACAF2A2C21FD2100E133A7 /* MenuView.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
+		ACACAF2C2C22057200E133A7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ACACAF2D2C22059E00E133A7 /* Router.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ACACAF2F2C220D0700E133A7 /* NavigationBarView */ = {
+			isa = PBXGroup;
+			children = (
+				ACACAF302C220D2200E133A7 /* NavigationBar.swift */,
+			);
+			path = NavigationBarView;
+			sourceTree = "<group>";
+		};
+		ACACAF322C221F1700E133A7 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				ACACAF332C221F3100E133A7 /* ColorExtentions.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		ACF0E6DE2C1AB2F1008787E6 /* WalkthroughView */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +195,7 @@
 				AC793C212C1AC96B00BFDA4D /* ContactsView.swift */,
 				AC2FAD8A2C20B64C003F46C8 /* SearchLineView.swift */,
 				AC2FAD862C209F3D003F46C8 /* ContactRowView.swift */,
+				ACACAF242C21F83E00E133A7 /* ContactDetailView.swift */,
 				AC2FAD882C20AB7C003F46C8 /* ContactAvatarView.swift */,
 			);
 			path = ContactView;
@@ -149,10 +204,13 @@
 		ACF0E6EB2C1AB6FF008787E6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ACACAF2F2C220D0700E133A7 /* NavigationBarView */,
 				ACF0E6DE2C1AB2F1008787E6 /* WalkthroughView */,
 				ACF0E6E72C1AB52B008787E6 /* AuthorizationView */,
+				ACACAF262C21FA1700E133A7 /* ChatsView */,
 				ACF0E6EA2C1AB6ED008787E6 /* ContactView */,
 				AC793C242C1AC9D400BFDA4D /* ProfileAccountView */,
+				ACACAF292C21FD1300E133A7 /* MenuView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,12 +287,17 @@
 			files = (
 				AC6769C32C1AB1890009D356 /* ContentView.swift in Sources */,
 				AC793C2A2C1AD70100BFDA4D /* AvatarView.swift in Sources */,
+				ACACAF2E2C22059E00E133A7 /* Router.swift in Sources */,
 				AC2FAD892C20AB7C003F46C8 /* ContactAvatarView.swift in Sources */,
+				ACACAF2B2C21FD2100E133A7 /* MenuView.swift in Sources */,
 				AC6769C12C1AB1890009D356 /* WBMessengerApp.swift in Sources */,
 				ACF0E6E02C1AB338008787E6 /* WalkthroughView.swift in Sources */,
 				ACF0E6E22C1AB364008787E6 /* UserAgreementButton.swift in Sources */,
+				ACACAF282C21FA3A00E133A7 /* ChatsView.swift in Sources */,
 				AC2FAD872C209F3D003F46C8 /* ContactRowView.swift in Sources */,
 				AC793C2C2C1AE0E400BFDA4D /* SocialButtonsView.swift in Sources */,
+				ACACAF312C220D2200E133A7 /* NavigationBar.swift in Sources */,
+				ACACAF252C21F83E00E133A7 /* ContactDetailView.swift in Sources */,
 				AC2FAD8B2C20B64C003F46C8 /* SearchLineView.swift in Sources */,
 				AC793C262C1AC9F000BFDA4D /* ProfileAccountView.swift in Sources */,
 				ACF0E6E62C1AB3B4008787E6 /* UserAgreementView.swift in Sources */,
@@ -242,6 +305,7 @@
 				AC793C222C1AC96B00BFDA4D /* ContactsView.swift in Sources */,
 				ACF0E6E42C1AB36F008787E6 /* LoginButtonView.swift in Sources */,
 				AC793C202C1AC16900BFDA4D /* TermsOfUseView.swift in Sources */,
+				ACACAF342C221F3100E133A7 /* ColorExtentions.swift in Sources */,
 				AC793C282C1ACA6700BFDA4D /* ContactModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

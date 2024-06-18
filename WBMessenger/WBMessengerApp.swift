@@ -12,6 +12,7 @@ struct WBMessengerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Router())
         }
     }
 }

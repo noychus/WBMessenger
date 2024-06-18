@@ -28,7 +28,7 @@ struct ContactsView: View {
                         SearchLineView(searchText: $searchText)
                         
                         ForEach(contacts) { contact in
-                            NavigationLink(destination: ProfileAccountView(contact: contact)) {
+                            NavigationLink(destination: ContactDetailView(contact: contact)) {
                                 VStack {
                                     ContactRowView(contact: contact)
                                     
@@ -42,7 +42,7 @@ struct ContactsView: View {
                 }
                 .scrollIndicators(.hidden)
             }
-            .background(Color("brandBackground"))
+        .background(Color("brandBackground"))
         }
     }
 }

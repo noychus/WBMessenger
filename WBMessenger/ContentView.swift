@@ -8,11 +8,44 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var router: Router
+    
     var body: some View {
-        WalkthroughView()
+        
+        NavigationStack {
+            VStack(spacing: 0) {
+                NavigationBar(title: router.navigationTitle(for: router.selectedTab))
+                    .background(Color("brandBackground"))
+                
+                TabView(selection: $router.selectedTab) {
+                    
+                    ContactsView()
+                        .tabItem {
+                            Image(router.selectedTab == .contacts ? "contactsTabActive" : "contactsTabNoActive")
+                        }
+                        .tag(Tabs.contacts)
+                    
+                    ChatsView()
+                        .tabItem {
+                            Image(router.selectedTab == .chats ? "chatsTabActive" : "chatsTabNoActive")
+                        }
+                        .tag(Tabs.chats)
+                    
+                    MenuView()
+                        .tabItem {
+                            Image(router.selectedTab == .menu ? "menuTabActive" : "menuTabNoActive")
+                        }
+                        .tag(Tabs.menu)
+                }
+                .navigationBarHidden(true)
+            }
+        }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(Router())
 }
