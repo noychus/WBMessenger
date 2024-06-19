@@ -50,6 +50,13 @@ struct ContactDetailView: View {
                     router.selectedContact = contact
                 }
             }
+            .gesture(DragGesture().onEnded( { gesture in
+                if gesture.translation.width > 100 {
+                    dismiss()
+                    router.selectedTab = .contacts
+                    router.selectedContact = nil
+                }
+            }))
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
             .navigationBarTitle("", displayMode: .inline)
