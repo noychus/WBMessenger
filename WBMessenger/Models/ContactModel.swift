@@ -17,9 +17,9 @@ struct Contact: Identifiable ,Hashable {
     
     var lastVisit: String {
         guard let lastVisitDate = self.lastVisitDate else { return "Offline" }
-
+        
         let secondsAgo = Int(Date().timeIntervalSince(lastVisitDate))
-
+        
         switch secondsAgo {
         case 0 ..< 60:
             return "Online"
