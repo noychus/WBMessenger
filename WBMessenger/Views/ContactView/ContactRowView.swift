@@ -21,7 +21,7 @@ struct ContactRowView: View {
                     .foregroundStyle(Color("brandTextColor"))
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
-                Text(contact.isOnline ? "Online" : "Offline")
+                Text(contact.lastVisit)
                     .font(.system(size: 12, weight: .regular, design: .default))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundStyle(Color("brandGrayColor"))
@@ -36,6 +36,6 @@ struct ContactRowView: View {
 }
 
 #Preview {
-    ContactRowView(contact: Contact(name: "Анастасия Иванова", lastVisitDate: Date().addingTimeInterval(-60), imageProfile: "anastasia", haveStories: false, phoneNumber: "9999999999"))
+    ContactRowView(contact: Contact(name: "Анастасия Иванова", lastVisitDate: Date().addingTimeInterval(-50), imageProfile: "anastasia", haveStories: false, phoneNumber: "9999999999"))
 }
 

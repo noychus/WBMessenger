@@ -16,6 +16,10 @@ struct NavigationBar: View {
     var showPlusButton: Bool {
         return router.selectedTab == .contacts
     }
+    var showChatsButtons: Bool {
+        return router.selectedTab == .chats
+    }
+    
     var backButtonAction: () -> Void = {}
     
     var body: some View {
@@ -42,6 +46,22 @@ struct NavigationBar: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 24, height: 24, alignment: .center)
                 })
+            }
+            
+            if showChatsButtons {
+                Button(action: {}) {
+                    Image("messagePlusButton")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24, alignment: .center)
+                }
+                
+                Button(action: {}) {
+                    Image("listCheckButton")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 24, height: 24, alignment: .center)
+                }
             }
         }
         .padding(.horizontal)

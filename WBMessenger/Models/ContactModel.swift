@@ -38,7 +38,7 @@ struct Contact: Identifiable ,Hashable {
     
     var isOnline: Bool {
         guard let lastVisitDate = lastVisitDate else { return false }
-        return Date().timeIntervalSince(lastVisitDate) < 30
+        return Date().timeIntervalSince(lastVisitDate) < 60
     }
     
     func getInitials() -> String {

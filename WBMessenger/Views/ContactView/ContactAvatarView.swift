@@ -20,43 +20,75 @@ struct ContactAvatarView: View {
                     .stroke(LinearGradient(colors: gradientColors, startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 2)
                     .frame(width: 54, height: 54)
                     .overlay(
-                        VStack {
-                            switch contact.imageProfile {
-                            case .some(let image):
-                                Image(image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 48, height: 48, alignment: .center)
-                                    .clipShape(RoundedRectangle(cornerRadius: 15))
-                            case .none:
-                                RoundedRectangle(cornerRadius: 15)
-                                    .frame(width: 48, height: 48, alignment: .center)
-                                    .foregroundStyle(Color("brandColor"))
-                                    .overlay(
-                                        Text(contact.getInitials())
-                                            .foregroundStyle(Color("brandWhiteColor"))
-                                            .font(.system(size: 14, weight: .semibold, design: .default))
-                                    )
+                        ZStack {
+                            
+                            VStack {
+                                
+                                switch contact.imageProfile {
+                                case .some(let image):
+                                    Image(image)
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fill)
+                                        .frame(width: 48, height: 48, alignment: .center)
+                                        .clipShape(RoundedRectangle(cornerRadius: 15))
+                                case .none:
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .frame(width: 48, height: 48, alignment: .center)
+                                        .foregroundStyle(Color("brandColor"))
+                                        .overlay(
+                                            Text(contact.getInitials())
+                                                .foregroundStyle(Color("brandWhiteColor"))
+                                                .font(.system(size: 14, weight: .semibold, design: .default))
+                                        )
+                                }
+                            }
+                            
+                            if contact.isOnline {
+                                Circle()
+                                    .foregroundStyle(Color.green)
+                                    .frame(width: 12, height: 12)
+                                    .offset(x: 20, y: -20)
+                                    .overlay {
+                                        Circle()
+                                            .stroke(Color.white, lineWidth: 1.5)
+                                            .frame(width: 12, height: 12)
+                                            .offset(x: 20, y: -20)
+                                    }
                             }
                         }
                     )
             case false:
-                switch contact.imageProfile {
-                case .some(let image):
-                    Image(image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 48, height: 48, alignment: .center)
-                        .clipShape(RoundedRectangle(cornerRadius: 15))
-                case .none:
-                    RoundedRectangle(cornerRadius: 15)
-                        .frame(width: 48, height: 48, alignment: .center)
-                        .foregroundStyle(Color("brandColor"))
-                        .overlay(
-                            Text(contact.getInitials())
-                                .foregroundStyle(Color("brandWhiteColor"))
-                                .font(.system(size: 14, weight: .semibold, design: .default))
-                        )
+                ZStack {
+                    switch contact.imageProfile {
+                    case .some(let image):
+                        Image(image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 48, height: 48, alignment: .center)
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                    case .none:
+                        RoundedRectangle(cornerRadius: 15)
+                            .frame(width: 48, height: 48, alignment: .center)
+                            .foregroundStyle(Color("brandColor"))
+                            .overlay(
+                                Text(contact.getInitials())
+                                    .foregroundStyle(Color("brandWhiteColor"))
+                                    .font(.system(size: 14, weight: .semibold, design: .default))
+                            )
+                    }
+                    
+                    if contact.isOnline {
+                        Circle()
+                            .foregroundStyle(Color.green)
+                            .frame(width: 12, height: 12)
+                            .offset(x: 20, y: -20)
+                            .overlay {
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 2)
+                                    .frame(width: 13, height: 13)
+                                    .offset(x: 20, y: -20)
+                            }
+                    }
                 }
             }
         }
@@ -65,6 +97,6 @@ struct ContactAvatarView: View {
 }
 
 #Preview {
-    ContactAvatarView(contact: Contact(name: "Анастасия Иванова", lastVisitDate: Date().addingTimeInterval(-60), imageProfile: "anastasia", haveStories: true, phoneNumber: "9999999999"))
+    ContactAvatarView(contact: Contact(name: "Анастасия Иванова", lastVisitDate: Date().addingTimeInterval(-50), haveStories: false, phoneNumber: "9999999999"))
 }
 
