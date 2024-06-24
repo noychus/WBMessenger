@@ -42,6 +42,15 @@ struct ContentView: View {
             }
         }
         .edgesIgnoringSafeArea(.top)
+        .onContinueUserActivity("INIntent") { userActivity in
+            if let intent = userActivity.interaction?.intent as? OpenChatIntent {
+                // Handle OpenChatIntent
+                if let contact = DataRouter.shared.contacts.first(where: { $0.name == intent.contactName }) {
+                    router.selectedContact = contact
+                    router.selectedTab = .contactDetail
+                }
+            }
+        }
     }
 }
 
